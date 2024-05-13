@@ -1,0 +1,61 @@
+/* navbar-style.css */
+/* Estilo para que el texto de la barra de navegación sea blanco al pasar el cursor */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: white !important;
+}
+
+/* Estilo para botones de registro y carrito */
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    color: white;
+}
+
+/* Estilo para hacer el botón más pequeño */
+.btn-sm {
+    padding: .40rem .20rem;
+    font-size: .75rem; 
+    border-radius: .8rem;
+}
+
+/* Ajustes para la barra de navegación en vista de teléfono */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        margin-top: 10px;
+    }
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+    /* Ajustes para los botones de Formulario y Carrito */
+    .navbar-nav .btn-group {
+        margin-top: 10px;
+    }
+    /* Ajustes para el tamaño y el espacio entre botones de Formulario y Carrito */
+    .btn-group .btn {
+        padding: .25rem .5rem;
+        font-size: .75rem;
+    }
+    /* Ajustes para el margen de los botones de registro y carrito */
+    .btn-group .btn:first-child {
+        margin-right: 5px;
+    }
+    .btn-group .btn:last-child {
+        margin-left: 5px;
+    }
+}
+
+/* Ajustes para hacer la barra de búsqueda más transparente */
+.form-control.transparent {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
